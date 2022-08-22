@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class harmonik {
+    public static void main(String[] args) {
+        double i;
+        double topla = 0;
+
+        Scanner bjk = new Scanner(System.in);
+        System.out.println("Harmonik toplam sayisi girin  :  ");
+        i = bjk.nextDouble();
+        for (double k = 1; k < i; k++) {
+            topla = (1 / k) + topla;
+            System.out.println(topla);
+        }System.out.println("harmonik toplami " + topla);
+    }
+}
